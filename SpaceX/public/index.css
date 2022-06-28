@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("/assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  padding: 30px 0px 30px 30px;
+}
+
+.navbar .desktop {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  width: 80%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  border-bottom: 3px solid #ffffff;
+}
+
+.navbar .logo-img {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar .desktop ul {
+  display: flex;
+  margin-right: auto;
+}
+
+.navbar .desktop ul li {
+  margin-left: 5rem;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  cursor: pointer;
+}
+
+.navbar .desktop ul li:hover {
+  border-bottom: 3px solid #ffffff;
+  opacity: 0.5;
+}
+
+.navbar .desktop ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar .desktop ul li {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2.7px;
+}
+
+.line {
+  width: 50%;
+  height: 1px;
+  margin-top: 45px;
+  margin-left: 50px;
+  background-color: #979797;
+  filter: blur(1px);
+}
+
+main {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  margin-left: 10%;
+}
+
+main .info {
+  width: 450px;
+}
+
+main .info h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+main .info h1 {
+  font-family: "Bellefair", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 150px;
+}
+
+main .info p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+main .explore {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 200px;
+}
+
+main .explore:hover {
+  cursor: pointer;
+}
+
+main .explore:hover:after {
+  border-radius: 50%;
+  content: "";
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+main .explore h3 {
+  font-family: "Bellefair", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile-nav {
+  visibility: hidden;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("/assets/home/background-home-mobile.jpg");
+  }
+
+  .navbar .desktop {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-left: 75%;
+    margin-top: 34px;
+    z-index: 1;
+  }
+
+  .line {
+    display: none;
+  }
+
+  main {
+    height: 100vh;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    right: -19%;
+    width: 60%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    top: 0;
+    display: none;
+    height: 120vh;
+  }
+
+  .mobile-nav nav {
+    margin-top: 100px;
+  }
+
+  .mobile-nav ul li {
+    margin-top: 2.5rem;
+  }
+
+  .mobile-nav ul li a {
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .mobile-nav ul li {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+  }
+
+  main .info {
+    width: auto;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  main .info h5 {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  main .info h1 {
+    font-size: 80px;
+    margin: 20px;
+  }
+
+  main .info p {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  main .explore {
+    width: 200px;
+    height: 200px;
+    margin-left: 25%;
+    margin-top: 30%;
+  }
+
+  main .explore h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+  body {
+    background-image: url('/assets/home/background-home-tablet.jpg');
+  }
+
+  .line {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navbar .desktop {
+    width: 70%;
+  }
+
+  .navbar .desktop ul li {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin-left: 2.5rem
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  main .explore {
+    margin: 0;
+    margin-top: 6rem;
+    padding: 0;
+  }
+
+  main .info {
+    width: 500px;
+  }
+
+  main .info h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

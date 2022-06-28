@@ -1,0 +1,233 @@
+body {
+  background-image: url("/assets/technology/background-technology-desktop.jpg");
+}
+
+.tech {
+  display: flex;
+}
+
+.tech-opt {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.tech-opt ul .active-opt {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.tech-info,
+.tech-opt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.deactive-opt {
+  border: 1px solid #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.tech-opt ul li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tech-info h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+.tech-info h2 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 56px;
+  color: #ffffff;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.tech-info {
+  width: 550px;
+}
+
+.tech-info p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-top: 2rem;
+}
+
+.tech-img {
+  margin-left: auto;
+  height: 50%;
+}
+
+.tech-img img {
+  width: 600px;
+  height: 450px;
+}
+
+.tech-opt-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("/assets/technology/background-technology-mobile.jpg");
+  }
+
+  .tech-opt {
+    display: none;
+  }
+
+  .tech-opt-mobile {
+      display: block;
+  }
+
+  .tech {
+    flex-direction: column-reverse;
+  }
+
+  .tech-info {
+    margin-top: 2rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .tech-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .tech-opt-mobile {
+    margin-top: 1rem;
+  }
+
+  .tech-opt-mobile .active-opt {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Bellefair", sans-serif;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000;
+  }
+
+  .tech-opt-mobile .deactive-opt {
+    border: 1px solid #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Bellefair", sans-serif;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.25;
+  }
+
+  .tech-opt-mobile ul li {
+    margin-left: 1rem;
+  }
+
+  .tech-opt-mobile ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .tech-info p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 0.5rem;
+  }
+
+  .tech-info h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 950px) {
+    body {
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+    }
+
+    .tech-opt {
+        display: none;
+    }
+
+    .tech {
+        flex-direction: column-reverse;
+    }
+
+        .tech-img {
+            margin: 0;
+        }
+
+        .tech-img img {
+            width: 820px;
+        }
+
+        .tech-info {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .tech-opt {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .tech-opt ul {
+            display: flex;
+        }
+
+        .tech-opt ul li {
+            margin-left: 2rem;
+        }
+}

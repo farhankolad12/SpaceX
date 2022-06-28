@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX - Crew</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <link rel="stylesheet" href="/public/crew.css">
+    <link rel="stylesheet" href="/public/dest.css">
+    <link rel="stylesheet" href="/public/tech.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="24" cy="24" r="24" fill="#FFF" />
+                    <path fill="#0B0D17"
+                        d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+                </g>
+            </svg>
+        </div>
+        <div class="line"></div>
+        <nav class="desktop">
+            <ul>
+                <li>00
+                    <a href="/index.html">home</a>
+                </li>
+                <li>01
+                    <a href="/public/dest.html">destination</a>
+                </li>
+                <li>02
+                    <a href="/public/crew.html">crew</a>
+                </li>
+                <li class="active">03
+                    <a href="/public/tech.html">technology</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                    <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                </g>
+            </svg>
+        </div>
+    </header>
+    <div class="mobile-nav"></div>
+    <h1>
+        <span>03</span>
+        space launch 101
+    </h1>
+    <div class="tech-container">
+        <div class="tech">
+            <div class="tech-opt">
+                <ul>
+                    <li class="active-opt">1</li>
+                    <li class="deactive-opt">2</li>
+                    <li class="deactive-opt">3</li>
+                </ul>
+            </div>
+            <div class="tech-info">
+                <h3>the terminology</h3>
+                <h2>launch vehicle</h2>
+                <p class="description">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space,
+                usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+            <div class="tech-img">
+                <img src="/assets/technology/image-launch-vehicle-landscape.jpg" alt="Technology">
+                <div class="tech-opt-mobile">
+                    <ul>
+                        <li class="active-opt">1</li>
+                        <li class="deactive-opt">2</li>
+                        <li class="deactive-opt">3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/src/main.js"></script>
+    <script src="/src/tech.js"></script>
+    </body>
+    </html>
